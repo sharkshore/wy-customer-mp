@@ -4,51 +4,29 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    
+    
+    swipers:[
+      {
+        url:'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A1.jpg',
+      },
+      {
+        url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A2.jpg',
+      },
+      {
+        url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A3.jpg',
+      },
+      {
+        url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A4.jpg',
+      },
+      {
+        url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A5.jpg',
+      },
+    ]
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+    
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
+  
 })

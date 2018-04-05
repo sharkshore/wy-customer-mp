@@ -1,13 +1,27 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view >
+
+  <!-- 轮播图 -->
+  <view>
+    <swiper class='swiper'  indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{swipers}}" wx:for-index="index">    
+        <swiper-item>    
+          <image class="slide-image" src="{{item.url}}"  mode="aspectFill"/>    
+        </swiper-item>    
+      </block> 
+    </swiper>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <!-- 搜索框 -->
+  <view class='search_row'>
+    <view class='search_input' bindtap="sousuo">  
+      <view >
+        <span class='search_txt'>搜索<icon class='search_icon' type='search' size='12' color='#ababab'/></span>
+        
+      </view>
+    </view>  
   </view>
+
+  
+  
 </view>

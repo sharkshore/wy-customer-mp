@@ -99,9 +99,9 @@
 
 .booth_product{
   margin-top: 0rpx;
-  font-family: 微软雅黑;
+  /* font-family: 微软雅黑; */
   font-size: 16px;
-  color: #ababab;
+  
   display: inline-flex;
   flex-direction: column;
 
@@ -117,9 +117,11 @@
   margin-right: 40rpx;
 }
 .booth_product_name{
-
+  font-family: 方正兰亭细黑;
+  color: black;
 }
 
 .booth_product_price{
+  color: red;
 
 }

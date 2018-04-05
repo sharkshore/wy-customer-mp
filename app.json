@@ -27,14 +27,14 @@
       {
         "pagePath": "pages/category/category",
         "text": "分类",
-        "iconPath": "asserts/gouwuche2.png",
-        "selectedIconPath": "asserts/gouwuche.png"
+        "iconPath": "asserts/fenlei2.png",
+        "selectedIconPath": "asserts/fenlei.png"
       },
       {
         "pagePath": "pages/merchants/merchants",
         "text": "购物车",
-        "iconPath": "asserts/fenlei2.png",
-        "selectedIconPath": "asserts/fenlei.png"
+        "iconPath": "asserts/gouwuche2.png",
+        "selectedIconPath": "asserts/gouwuche.png"
       },
       {
         "pagePath": "pages/userProfile/userProfile",

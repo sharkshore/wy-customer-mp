@@ -1,2 +1,15 @@
 <!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class='category_container'>
+  <!-- 左侧栏 -->
+  <view class='nav_left'>
+
+  </view>
+
+  <!-- 右侧栏 -->
+  <view class='nav_right'>
+  </view>
+
+</view>
+
+
+

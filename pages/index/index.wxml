@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view >
+<view class='index_container'>
 
   <!-- 轮播图 -->
   <view>
@@ -13,13 +13,63 @@
   </view>
 
   <!-- 搜索框 -->
-  <view class='search_row'>
+  <view class='search_container'>
     <view class='search_input' bindtap="sousuo">  
       <view >
-        <span class='search_txt'>搜索<icon class='search_icon' type='search' size='12' color='#ababab'/></span>
-        
+        <span class='search_txt'>搜索<icon class='search_icon' type='search' size='12' color='#ababab'/></span>       
       </view>
     </view>  
+  </view>
+
+  <!-- 商品分类类目 -->
+  <view class='category_container'>
+      <view class='category_row'>
+        <block wx:for="{{categories}}" wx:for-index="index">
+          <block wx:if="{{index<5}}">
+            <view class='category_block' >
+              <image class='category_image' src='{{item.imageUrl}}' /> 
+              <text class='category_txt'>{{item.name}}</text>
+            </view>
+          </block>
+        </block>
+      </view>
+
+      <view wx:if="{{categories.length>4}}" class='category_row'>
+        <block wx:for="{{categories}}" wx:for-index="index">
+          <block wx:if="{{index>4}}">
+            <view class='category_block' >
+              <image class='category_image' src='{{item.imageUrl}}' /> 
+              <text class='category_txt'>{{item.name}}</text>
+            </view>
+          </block>
+        </block>
+      </view>
+
+  </view>
+
+  <!-- 商品展位 -->
+  <view class='booth_container'>
+      <!-- 展位块 -->
+      <view class='booth_block' wx:for="{{booths}}" wx:for-index="index" wx:for-item="item">
+
+        <view class='isolation'></view>
+        <view class='booth_title'>
+          <text>{{item.name}}</text>
+          <text>查看更多>></text>
+        </view>
+
+        <!-- 产品列表 -->
+        <view class='booth_product_container'>
+            <view class='booth_product' wx:for="{{products[index].productList}}" wx:for-index="product_index" wx:for-item="product">
+              <image wx:if="{{product_index%2==0}}" class='boot_product_image_single' src='{{product.productImageUrl}}'/>
+              <image wx:if="{{product_index%2!=0}}" class='boot_product_image' src='{{product.productImageUrl}}'/>
+              <text class='booth_product_name'>{{product.productName}}</text>
+              <text class='booth_product_price'>¥{{product.price}}</text>
+            </view>
+
+        </view>
+      </view>
+
   </view>
 
   

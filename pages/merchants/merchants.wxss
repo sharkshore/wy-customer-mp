@@ -1,59 +1,148 @@
 .merchants_container {
 }
 
-
-.merchants_top{
+.merchants_top {
+  padding: 10rpx 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
 }
 
-.merchants_top label{
+.merchants_top label {
   display: block;
-  margin-left:30rpx;
+  margin-left: 20rpx;
   font-size: 16px;
   color: #ccc;
 }
 
-.merchants_top image{
+.merchants_top image {
   display: block;
-  width:40rpx;
+  width: 40rpx;
   height: 40rpx;
-  margin-right:30rpx; 
+  margin-right: 30rpx;
 }
 
-/** 购物车中间 */
+/**-------分割线-------*/
+
+/** 购物车主体内容 */
+
 .merchants_main {
-
 }
 
-.product::before{
-  height: 30rpx;
-  display: block;
-  background-color:#ccc; 
-}
-
-.product{
+.product {
+  height: 160rpx;
+  padding: 8rpx 0 8rpx 20rpx;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
 }
 
+.product image {
+  width: 160rpx;
+  height: 160rpx;
+}
 
+.product .desc {
+  height: 100%;
+  width: 500rpx;
+  padding-left: 20rpx;
+  font-size: 14px;
+  color: #ababab;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.product .desc .desc_bottom {
+  width: 500rpx;
+   display: flex; 
+  /* justify-content: flex-start; */
+   align-items: center; 
+}
 
+.product .title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
+.product .guige {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
+.product .price {
+  display: block;
+  color: red;
+  margin-right:150rpx; 
+}
 
+/**-------分割线-------*/
+
+/** 购物车加减号 */
+
+/*主容器*/
+
+.stepper {
+  display: block;
+  width: 176rpx;
+  height: 52rpx;
+  border: 1px solid #ccc;
+  border-radius: 6rpx;
+  margin: 0 auto;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  width: 46rpx;
+  line-height: 52rpx;
+  text-align: center;
+  float: left;
+}
+
+/*数值*/
+
+.stepper input {
+  width: 80rpx;
+  height: 52rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  /*给中间的input设置左右边框即可*/
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  color: #ccc;
+}
 
 /**-------分割线-------*/
 
 /** 购物车底部编辑计算栏 */
 
 .merchants_bottom {
-  position: absolute;
+  position: sticky;
   bottom: 0;
+  background-color: white;
+  opacity: 1;
+  z-index: 999;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -63,17 +152,16 @@
   font-size: 14px;
 }
 
-.merchants_bottom text{
+.merchants_bottom text {
   color: red;
   margin-right: 40rpx;
 }
-
 
 .btn_jiesuan {
   background-color: #f00;
   border: none;
   color: white;
-  padding: 15rpx 32rpx;
+  padding: 23rpx 48rpx;
   text-align: center;
   text-decoration: none;
   display: inline-block;

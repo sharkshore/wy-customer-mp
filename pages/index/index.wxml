@@ -24,7 +24,7 @@
   <!-- 商品分类类目 -->
   <view class='category_container'>
       <view class='category_block' wx:for="{{categories}}" wx:for-index="index" >
-          <image class='category_image' src='{{item.imageUrl}}' /> 
+          <image class='category_image' src='{{item.imageUrl}}'  mode="aspectFill" /> 
           <view class='category_txt'>{{item.name}}</view>
       </view>
   </view>
@@ -43,7 +43,7 @@
         <!-- 产品列表 -->
         <view class='product_container'>
             <view class='product' wx:for="{{products[index].productList}}" wx:for-index="product_index" wx:for-item="product">
-              <image  src='{{product.productImageUrl}}'/>
+              <image  src='{{product.productImageUrl}}'  mode="aspectFill"/>
               <text >{{product.productName}}</text>
               <text class='price'>¥{{product.price}}</text>
             </view>

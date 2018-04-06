@@ -65,9 +65,7 @@ page{
   text-overflow: ellipsis;  
 }
 
-.product-gap{
-  height: 28rpx;
-} 
+
 
 .price{
   color: red;

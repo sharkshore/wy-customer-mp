@@ -17,12 +17,9 @@
     <!--如果有数据，才遍历项-->
     <view wx:if="{{navRightItems.length>0}}">
       <view class='nav_right_items' wx:for="{{navRightItems}}" wx:for-index="product_index" wx:for-item="product">
-        <image src='{{product.productImageUrl}}'/>
-        <!-- <image wx:if="{{product_index%2==0}}" class='boot_product_image_single' src='{{product.productImageUrl}}'/>
-        <image wx:if="{{product_index%2!=0}}" class='boot_product_image' src='{{product.productImageUrl}}'/> -->
+        <image src='{{product.productImageUrl}}'  mode="aspectFill"/>
         <text >{{product.productName}}</text>
-        <view class='product-gap'></view>
-         <!-- <text class='price' >¥{{product.price}}</text>  -->
+        <view class='gap-white-3'></view>
       </view>
     </view>
 

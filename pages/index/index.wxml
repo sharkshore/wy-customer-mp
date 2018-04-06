@@ -23,28 +23,10 @@
 
   <!-- 商品分类类目 -->
   <view class='category_container'>
-      <view class='category_row'>
-        <block wx:for="{{categories}}" wx:for-index="index">
-          <block wx:if="{{index<5}}">
-            <view class='category_block' >
-              <image class='category_image' src='{{item.imageUrl}}' /> 
-              <text class='category_txt'>{{item.name}}</text>
-            </view>
-          </block>
-        </block>
+      <view class='category_block' wx:for="{{categories}}" wx:for-index="index" >
+          <image class='category_image' src='{{item.imageUrl}}' /> 
+          <view class='category_txt'>{{item.name}}</view>
       </view>
-
-      <view wx:if="{{categories.length>4}}" class='category_row'>
-        <block wx:for="{{categories}}" wx:for-index="index">
-          <block wx:if="{{index>4}}">
-            <view class='category_block' >
-              <image class='category_image' src='{{item.imageUrl}}' /> 
-              <text class='category_txt'>{{item.name}}</text>
-            </view>
-          </block>
-        </block>
-      </view>
-
   </view>
 
   <!-- 商品展位 -->
@@ -52,7 +34,7 @@
       <!-- 展位块 -->
       <view class='booth_block' wx:for="{{booths}}" wx:for-index="index" wx:for-item="item">
 
-        <view class='isolation'></view>
+        <view class='gap'></view>
         <view class='booth_title'>
           <text>{{item.name}}</text>
           <text>查看更多>></text>

@@ -50,7 +50,7 @@ Page({
         url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A4.jpg',
       },
       {
-        url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A5.jpg',
+        url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A6.jpg',
       },
     ];
 
@@ -61,46 +61,6 @@ Page({
   getCategories() {
     //调用接口获取所有商品类目
     let api_categories = [
-      {
-        name: '服饰',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/fushi.png'
-      },
-      {
-        name: '家具',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/jiaju.png'
-      },
-      {
-        name: '家装',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/jiazhuang.png'
-      },
-      {
-        name: '美妆',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/meizhuang.png'
-      },
-      {
-        name: '男装',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/nanzhuang.png'
-      },
-      {
-        name: '内衣',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/neiyi.png'
-      },
-      {
-        name: '食品',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/shipin.png'
-      },
-      {
-        name: '数码',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/shuma.png'
-      },
-      {
-        name: '书籍',
-        imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/shuma.png'
-      },
-
-    ];
-
-    api_categories = [
       {
         name: '项链',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/Chanel_Necklace_512px_509005_easyicon.net.png'

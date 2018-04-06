@@ -2,11 +2,12 @@
 <view class='category_container'>
   <!-- 左侧栏 -->
   <view class='nav_left'>
-
+    左侧
   </view>
 
   <!-- 右侧栏 -->
   <view class='nav_right'>
+    右侧
   </view>
 
 </view>

@@ -114,27 +114,37 @@
 .booth_product {
   margin-top: 0rpx;
   /* font-family: 微软雅黑; */
-  font-size: 16px;
+  font-size: 14px;
   display: inline-flex;
   flex-direction: column;
 }
 
 .boot_product_image {
-  width: 355rpx;
-  height: 355rpx;
+  width: 369rpx;
+  height: 369rpx;
 }
 
 .boot_product_image_single {
-  width: 355rpx;
-  height: 355rpx;
-  margin-right: 40rpx;
+  width: 369rpx;
+  height: 369rpx;
+  margin-right: 12rpx;
 }
 
 .booth_product_name {
+  display: block;  
+  padding-bottom: 12rpx;
+
+  color: #ababab;
   font-family: 方正兰亭细黑;
-  color: black;
+  font-size: 14px;  
+
+  overflow: hidden;  
+  white-space: nowrap;  
+  text-overflow: ellipsis;  
 }
 
 .booth_product_price {
+  display: block; 
+  padding-bottom: 8rpx;
   color: red;
 }

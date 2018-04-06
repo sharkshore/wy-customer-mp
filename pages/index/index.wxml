@@ -48,8 +48,8 @@
               <text class='booth_product_name'>{{product.productName}}</text>
               <text class='booth_product_price'>¥{{product.price}}</text>
             </view>
-
         </view>
+        
       </view>
 
   </view>

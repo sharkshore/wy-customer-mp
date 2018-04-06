@@ -1,16 +1,33 @@
 <!--pages/category/category.wxml-->
 <view class='category_container'>
-  <!-- 左侧栏 -->
-  <view class='nav_left'>
-    左侧
+
+  <!--左侧栏-->
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}">
+      <!--当前项的id等于item项的id，那个就是当前状态-->
+      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" 
+      bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</view>
+    </block>
   </view>
 
-  <!-- 右侧栏 -->
-  <view class='nav_right'>
-    右侧
+  <!--右侧栏-->
+  <view class="nav_right">
+  
+    <!--如果有数据，才遍历项-->
+    <view wx:if="{{navRightItems.length>0}}">
+      <view class='nav_right_items' wx:for="{{navRightItems}}" wx:for-index="product_index" wx:for-item="product">
+        <image src='{{product.productImageUrl}}'/>
+        <!-- <image wx:if="{{product_index%2==0}}" class='boot_product_image_single' src='{{product.productImageUrl}}'/>
+        <image wx:if="{{product_index%2!=0}}" class='boot_product_image' src='{{product.productImageUrl}}'/> -->
+        <text >{{product.productName}}</text>
+        <view class='product-gap'></view>
+         <!-- <text class='price' >¥{{product.price}}</text>  -->
+      </view>
+    </view>
+
+    <!--如果无数据，则显示数据-->
+    <view wx:else>暂无数据</view>
   </view>
 
 </view>
-
-
-

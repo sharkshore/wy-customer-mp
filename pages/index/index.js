@@ -62,38 +62,47 @@ Page({
     //调用接口获取所有商品类目
     let api_categories = [
       {
+        id:1,
         name: '项链',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/Chanel_Necklace_512px_509005_easyicon.net.png'
       },
       {
+        id: 2,
         name: '香水',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/Chanel_No5_Perfume_512px_509006_easyicon.net.png'
       },
       {
+        id: 3,
         name: '护肤露',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/Gucci_Eau_Perfume_512px_508993_easyicon.net.png'
       },
       {
+        id: 4,
         name: '睫毛膏',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/Lipstick_128px_546759_easyicon.net.png'
       },
       {
+        id: 5,
         name: '胭脂',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/make_up_128px_543688_easyicon.net.png'
       },
       {
+        id: 6,
         name: '口红',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/pink_Lipstick_150px_511414_easyicon.net.png'
       },
       {
+        id: 7,
         name: '零食',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/pink_Perfume_150px_511420_easyicon.net.png'
       },
       {
+        id: 8,
         name: '卸妆液',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/pink_Perfume_150px_511442_easyicon.net.png'
       },
       {
+        id: 9,
         name: '面具',
         imageUrl: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/icon/categories/secretmask_secret_mask_128px_522289_easyicon.net.png'
       },

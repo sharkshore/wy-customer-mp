@@ -1,2 +1,33 @@
-<!--pages/merchants/merchants.wxml-->
-<text>pages/merchants/merchants.wxml</text>
+<view class='merchants_container'>
+
+  <!-- 购物车顶部 -->
+  <view class='merchants_top'>
+    <label ><radio  checked='true' color='#FF4500'/>全选</label>
+    <image src='../../asserts/shanchu.png' />
+  </view>
+
+  <!-- 购物车列表 -->
+  <view class='merchants_main'>
+
+    
+    <view class='product'>
+      <radio  checked='true' color='#FF4500'/>
+      <image src='https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E4%B8%BB%E5%9B%BE1.jpg'/>
+      <view>
+        <text>海绵百洁布</text>
+        <text>颜色:红格子 尺码:XL</text>
+        <text >¥120.00</text>
+        
+      </view>
+    </view>
+
+  </view>
+    
+  <!-- 购物车编辑 -->
+    <view class='merchants_bottom'>
+        <text >总计:¥120.00</text>
+        <view class='btn_jiesuan'>结算</view>
+    </view>
+
+
+</view>

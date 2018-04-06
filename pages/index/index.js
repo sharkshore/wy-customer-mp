@@ -50,7 +50,7 @@ Page({
         url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A4.jpg',
       },
       {
-        url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD%E5%B9%BF%E5%91%8A6.jpg',
+        url: 'https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E8%BD%AE%E6%92%AD10.jpg',
       },
     ];
 

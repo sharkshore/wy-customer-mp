@@ -1,1 +1,82 @@
-/* pages/merchants/merchants.wxss */
+.merchants_container {
+}
+
+
+.merchants_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.merchants_top label{
+  display: block;
+  margin-left:30rpx;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.merchants_top image{
+  display: block;
+  width:40rpx;
+  height: 40rpx;
+  margin-right:30rpx; 
+}
+
+/** 购物车中间 */
+.merchants_main {
+
+}
+
+.product::before{
+  height: 30rpx;
+  display: block;
+  background-color:#ccc; 
+}
+
+.product{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+/**-------分割线-------*/
+
+/** 购物车底部编辑计算栏 */
+
+.merchants_bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  font-family: 方正兰亭细黒;
+  font-size: 14px;
+}
+
+.merchants_bottom text{
+  color: red;
+  margin-right: 40rpx;
+}
+
+
+.btn_jiesuan {
+  background-color: #f00;
+  border: none;
+  color: white;
+  padding: 15rpx 32rpx;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}

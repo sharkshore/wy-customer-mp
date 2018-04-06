@@ -34,22 +34,21 @@
       <!-- 展位块 -->
       <view class='booth_block' wx:for="{{booths}}" wx:for-index="index" wx:for-item="item">
 
-        <view class='gap'></view>
+        <view class='gap-3'></view>
         <view class='booth_title'>
           <text>{{item.name}}</text>
           <text>查看更多>></text>
         </view>
 
         <!-- 产品列表 -->
-        <view class='booth_product_container'>
-            <view class='booth_product' wx:for="{{products[index].productList}}" wx:for-index="product_index" wx:for-item="product">
-              <image wx:if="{{product_index%2==0}}" class='boot_product_image_single' src='{{product.productImageUrl}}'/>
-              <image wx:if="{{product_index%2!=0}}" class='boot_product_image' src='{{product.productImageUrl}}'/>
-              <text class='booth_product_name'>{{product.productName}}</text>
-              <text class='booth_product_price'>¥{{product.price}}</text>
+        <view class='product_container'>
+            <view class='product' wx:for="{{products[index].productList}}" wx:for-index="product_index" wx:for-item="product">
+              <image  src='{{product.productImageUrl}}'/>
+              <text >{{product.productName}}</text>
+              <text class='price'>¥{{product.price}}</text>
             </view>
         </view>
-        
+
       </view>
 
   </view>

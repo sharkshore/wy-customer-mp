@@ -283,4 +283,32 @@ Page({
 
   },
 
+  //跳转到搜索框
+  search(e){
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
+
+  //跳转到商品分类
+  toCategory(e){
+    wx.switchTab({
+      url: '/pages/category/category',
+    })
+  },
+
+  //查看商品列表
+  showProductList(e){
+    wx.navigateTo({
+      url: '/pages/productList/productList',
+    })
+  },
+
+  //查看商品详情
+  showDetail(e){
+    wx.navigateTo({
+      url: '/pages/productDetail/productDetail',
+    })
+  }
+
 })

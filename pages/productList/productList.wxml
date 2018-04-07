@@ -1,0 +1,22 @@
+<view class='product_list_container'>
+
+  <view class='product_title'>
+    <text class='active'>综合</text>
+    <text>销量</text>
+    <text>最新</text>
+    <text>价格</text>
+  </view>
+
+  <view class='product_list'>
+    <view class='product' wx:for="{{products}}">
+      <image src='{{item.productImageUrl}}' />
+      <view class='desc'>
+        <text class='title'>{{item.productName}}</text>
+        <text class='guige'>月销:{{item.count}}</text>
+        <text class='price'>¥{{item.price}}</text>
+      </view>
+    </view>
+
+  </view>
+
+</view>

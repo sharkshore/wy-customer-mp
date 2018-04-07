@@ -27,3 +27,8 @@ radio {
 .gap-white-3{
   height: 30rpx;
 }
+
+.gap-white-6{
+  height: 60rpx;
+  background-color: white;
+}

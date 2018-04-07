@@ -1,0 +1,68 @@
+.product_list_container {
+  width: 100%;
+  height: 100%;
+  background-color: #e7e7e7;
+}
+
+/** 标题栏 */
+
+.product_title {
+  background-color: white;
+  padding: 10rpx 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  font-family: 华文细黑;
+  color: #515151;
+}
+
+.active {
+  color: red;
+}
+
+/** 产品列表 */
+
+.product_list {
+  padding: 0 20rpx;
+}
+
+.product {
+  height: 220rpx;
+  padding: 10rpx;
+  background-color: white;
+  margin-top: 14rpx;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+}
+
+.product image {
+  width: 200rpx;
+  height: 200rpx;
+  padding-left: 3rpx;
+  padding-right: 3rpx;
+}
+
+.desc {
+  height: 100%;
+  width: 480rpx;
+  padding: 0 20rpx;
+  font-size: 14px;
+  color: #ababab;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.desc text {
+  display: block;
+  margin-bottom:12rpx; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price{
+  color: red
+}

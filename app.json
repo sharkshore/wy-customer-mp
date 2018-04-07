@@ -4,7 +4,11 @@
     "pages/logs/logs",
     "pages/category/category",
     "pages/merchants/merchants",
-    "pages/userProfile/userProfile"
+    "pages/userProfile/userProfile",
+    "pages/productList/productList",
+    "pages/search/search",
+    "pages/productDetail/productDetail",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,16 +17,15 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color":"black",
-    "selectedColor":"red",
-    "position":"bottom",
-
+    "color": "black",
+    "selectedColor": "red",
+    "position": "bottom",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"asserts/shouye2.png",
-        "selectedIconPath":"asserts/shouye.png"
+        "iconPath": "asserts/shouye2.png",
+        "selectedIconPath": "asserts/shouye.png"
       },
       {
         "pagePath": "pages/category/category",

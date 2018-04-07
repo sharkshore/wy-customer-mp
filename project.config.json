@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -47,7 +47,26 @@
 				{
 					"id": -1,
 					"name": "个人中心",
-					"pathName": "pages/userProfile/userProfile"
+					"pathName": "pages/userProfile/userProfile",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品列表",
+					"pathName": "pages/productList/productList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/productDetail/productDetail",
+					"query": ""
 				}
 			]
 		}

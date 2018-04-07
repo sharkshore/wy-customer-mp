@@ -1,0 +1,57 @@
+<view class='detail_container'>
+  <!-- 轮播图 -->
+  <view>
+    <swiper class='swiper'  indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{productSwipers}}" wx:for-index="index">    
+        <swiper-item>    
+          <image class="slide-image" src="{{item.url}}"  mode="aspectFill"/>    
+        </swiper-item>    
+      </block> 
+    </swiper>
+  </view>
+  <!-- 商品文字介绍 -->
+  <view class='product_desc'>
+    <text class='name'>秋季新款金丝绒女冬装连帽卫衣中长款显瘦开衫保暖天鹅绒加厚外套</text>
+    <text class='price'>¥101.90</text>
+    <text class='count'>库存:3000 销量:1509</text>
+  </view>
+
+  <view class='gap-2'></view>
+  <!-- 商品详情 -->
+  <view class='product_content'>
+    <view class='product_content_top'>
+      <text>商品详情</text>
+    </view>
+    <view class='product_image_box'>
+        <image  wx:for="{{productImages}}" src='{{item.url}}' mode='widthFix'/>
+    </view>
+  </view>
+
+  <!-- 底部购买 -->
+  <view class='product_bottom'>
+    <view class='bottom_left'>
+      <view class='bottom_left_item'>
+        <image src='../../asserts/shoucang.png'></image>
+        <text>收藏</text>
+      </view>
+      <view class='bottom_left_item'>
+        <image src='../../asserts/kefu.png'></image>
+        <text>客服</text>
+      </view>
+      <view class='bottom_left_item'>
+        <image src='../../asserts/gouwuche2.png'></image>
+        <text>购物车</text>
+      </view>
+    </view>
+    
+    <view class='btn_group'>
+      <view class='btn_jiarugouwuche'>加入购物车</view>
+      <view class='btn_lijigoumai'>立即购买</view>
+    </view>
+  </view>
+
+  <!-- 底部弹窗 -->
+  <view>
+  </view>
+
+</view>

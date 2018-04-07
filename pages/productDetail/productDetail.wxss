@@ -1,0 +1,138 @@
+.detail_container {
+}
+
+/** 商品轮播图 */
+
+.swiper {
+  height: 750rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+/** 商品文字介绍 */
+
+.product_desc {
+  padding: 20rpx;
+}
+
+.product_desc text {
+  display: block;
+  font-family: 华文细黑;
+  font-size: 14px;
+  color: #515151;
+  margin-bottom: 20rpx;
+}
+
+.product_desc .name {
+  font-size: 14px;
+  color: #515151;
+}
+
+.product_desc .price {
+  color: red;
+}
+
+.product_desc .count {
+  font-size: 12px;
+}
+
+/** 商品底部详情 */
+
+.product_content {
+}
+
+.product_content_top {
+  padding-top: 14rpx;
+  border-bottom: 1px #e7e7e7 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_content_top text {
+  display: block;
+  border-bottom: 2px black solid;
+}
+
+.product_image_box {
+  padding: 20rpx;
+  text-align: center;
+}
+
+.product_image_box image {
+  width: 100%;
+  display: block;
+}
+
+
+/** 底部栏 */
+.product_bottom {
+  position: sticky;
+  bottom: -1px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.bottom_left {
+  width: 400rpx;
+  padding: 10rpx 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom_left_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_left_item image {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.bottom_left_item text {
+  display: block;
+  font-size: 12px;
+}
+
+
+
+.btn_group {
+  display: flex;
+  align-items: center;
+}
+
+/** 底部按钮组 */
+
+.btn_jiarugouwuche {
+  background-color: #ffa500;
+  border: none;
+  color: white;
+  padding: 31rpx 20rpx;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn_lijigoumai {
+  background-color: #f00;
+  border: none;
+  color: white;
+  padding: 31rpx 20rpx;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}

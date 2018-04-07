@@ -1,0 +1,15 @@
+<view class='order_container'>
+
+  <view class='order_top'>
+  
+  </view>
+
+  <view class='order_content'>
+  
+  </view>
+
+  <view class='order_bottom'>
+  
+  </view>
+
+</view>

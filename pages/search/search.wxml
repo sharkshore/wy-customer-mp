@@ -1,0 +1,19 @@
+<view class='search_container'>
+
+  <view class='search_input'>
+    <view class='left'>
+      <icon class='search_icon' type='search' size='12' color='#ababab' />
+      <input />
+    </view>
+    <view class='text' bindtap='cancel' >取消</view>
+  </view>
+
+  <view class='search_middle' >
+      <text>搜索历史</text>
+      <image src='../../asserts/shanchu.png' />
+  </view>
+
+  <view class='search_list'>
+    <text class='item' wx:for="{{searchList}}" >{{item}}</text>
+  </view>
+</view>

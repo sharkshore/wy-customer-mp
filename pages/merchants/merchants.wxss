@@ -47,19 +47,20 @@
 
 .product .desc {
   height: 100%;
-  width: 500rpx;
-  padding-left: 20rpx;
+  width: 480rpx;
+  padding: 0 20rpx;
   font-size: 14px;
   color: #ababab;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .product .desc .desc_bottom {
-  width: 500rpx;
+  width: 100%;
    display: flex; 
-  /* justify-content: flex-start; */
+   justify-content: space-between;
    align-items: center; 
 }
 
@@ -80,7 +81,6 @@
 .product .price {
   display: block;
   color: red;
-  margin-right:150rpx; 
 }
 
 /**-------分割线-------*/
@@ -95,7 +95,6 @@
   height: 52rpx;
   border: 1px solid #ccc;
   border-radius: 6rpx;
-  margin: 0 auto;
 }
 
 /*加号和减号*/

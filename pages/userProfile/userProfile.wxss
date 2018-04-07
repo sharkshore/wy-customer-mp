@@ -1,19 +1,142 @@
 /* pages/userProfile/userProfile.wxss */
 
+.profile_container {
+}
+
+/** 顶栏 */
+
+.profile_top {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /**用户图标样式**/
+
 .userinfo {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
+  width: 80rpx;
+  height: 80rpx;
   margin: 20rpx;
   border-radius: 50%;
 }
 
 .userinfo-nickname {
+  display: block;
   color: #aaa;
+}
+
+.profile_top .shouhuodizhi {
+  width: 200rpx;
+  height: 60rpx;
+  padding-right: 20rpx;
+  border-bottom-left-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff4544;
+  font-size: 14px;
+  color: white;
+}
+
+.shouhuodizhi image {
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.shouhuodizhi text {
+  display: block;
+  font-family: 华文细黑;
+}
+
+/** 订单 */
+
+.profile_order {
+}
+
+.order_top{
+  padding: 26rpx 16rpx;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  font-size: 14px;
+  color: #515151;
+}
+
+
+.order_list{
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  color: #515151;
+}
+
+.order_item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.order_item text{
+  display: block;
+}
+.order_item image{
+  display: block;
+  width:50rpx;
+  height:50rpx;
+}
+
+.order_item .badge{
+  position: absolute;
+  top:-20rpx;
+  right: 0;
+  border-radius: 20rpx;
+  font-size:12px;
+  color: white;
+  background-color: red;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 35rpx;
+  text-align: center;
+
+}
+
+
+/** 列表 */
+
+.profile_bottom {
+  font-size: 14px;
+  color: #515151;
+}
+
+.bottom_item{
+  padding:20rpx 20rpx;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_item_left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom_item image{
+  display: block;
+  margin-right: 20rpx;
+  width:50rpx;
+  height:50rpx;
 }

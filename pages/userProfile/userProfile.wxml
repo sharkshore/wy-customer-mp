@@ -1,10 +1,85 @@
 <!--pages/userProfile/userProfile.wxml-->
 
-<!-- 个人昵称 -->
-<view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='profile_container'>
+
+  <!-- 我的信息顶栏 -->
+  <view class='profile_top'>
+
+    <!-- 个人图像 -->
+    <view class="userinfo">
+        <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+          <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+
+    <!-- 收货地址 -->
+    <view class='shouhuodizhi'>
+      <image class='address' src='../../asserts/shouhuodizhi.png' />
+      <text>收货地址</text>
+    </view>
+
+  </view>
+
+  <view class='gap-2'></view>
+  <!-- 我的订单 -->
+  <view class='profile_order'>
+    <view class='order_top'>
+      <text class='left'>我的订单</text>
+      <text class='right'>查看更多订单>></text>
+    </view>
+    <view class='order_list'>
+      <view class='order_item'>
+        <image  src='../../asserts/daifukuan.png' />
+        <view class='badge'>1</view>
+        <text>代付款</text>
+      </view>
+      <view class='order_item'>
+        <image  src='../../asserts/daifahuo.png' />
+        <text>代发货</text>
+      </view>
+      <view class='order_item'>
+        <image  src='../../asserts/daishouhuo.png' />
+        <view class='badge'>3</view>
+        <text>待收货</text>
+      </view>
+      <view class='order_item'>
+        <image  src='../../asserts/yiwancheng.png' />
+        <text>已完成</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='gap-2'></view>
+
+  <!-- 下面的列表 -->
+  <view class='profile_bottom'>
+
+    <view class='bottom_item' >
+      <view class='bottom_item_left'>
+        <image  src='../../asserts/wodeshoucang.png' />
+        <text>我的收藏</text>
+      </view>
+      <view>></view>
+    </view>
+
+    <view class='bottom_item' >
+      <view class='bottom_item_left'>
+        <image  src='../../asserts/wodezuji.png' />
+        <text>我的足迹</text>
+      </view>
+      <view>></view>
+    </view>
+
+    <view class='bottom_item' >
+      <view class='bottom_item_left'>
+        <image  src='../../asserts/guanyuwomen.png' />
+        <text>关于我们</text>
+      </view>
+      <view>></view>
+    </view>
+
+
+  </view>
+
 </view>
+

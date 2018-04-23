@@ -7,10 +7,38 @@ Page({
   data: {
     productSwipers: [],//商家轮播图
     productImages:[],//商品详细图片
-    productDesc:""//商品文字描述
+    productDesc:"",//商品文字描述
+    modalVisible:false,
+    modalButtonText:'立即购买'
 
   
   },
+
+  //打开对话框
+  displayModal(e){
+    this.setData({
+      modalVisible:true,
+      modalButtonText:e.currentTarget.dataset.text
+    })
+
+  },
+
+  hideModal(e){
+    this.setData({
+      modalVisible: false,
+    })
+  },
+
+  //立即购买按钮
+  immediateBuy(){
+
+  },
+
+  //添加到购物车
+  AddToShopCar(){
+
+  },
+  
 
 
   //加载轮播图

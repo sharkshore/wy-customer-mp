@@ -45,13 +45,34 @@
     </view>
     
     <view class='btn_group'>
-      <view class='btn_jiarugouwuche'>加入购物车</view>
-      <view class='btn_lijigoumai'>立即购买</view>
+      <view class='btn_jiarugouwuche' bindtap='displayModal' data-text='加入购物车'>加入购物车</view>
+      <view class='btn_lijigoumai' bindtap='displayModal' data-text='立即购买'>立即购买</view>
     </view>
   </view>
 
   <!-- 底部弹窗 -->
-  <view>
+  <view class='modal' hidden='{{!modalVisible}}'>
+    <view class='top'>
+      <view class='product' >
+        <image class='prd_img' src='https://qiongxun-weiying.oss-cn-shanghai.aliyuncs.com/product/%E4%B8%BB%E5%9B%BE1.jpg' />
+        <view class='desc'>
+          <view class='desc_title'>
+            <text class='title'>迷迭香莹白亮彩眼霜</text>
+            <image class='guanbi' src='../../asserts/guanbi.png' bindtap='hideModal'/>
+          </view>
+          <text class='desc_item guige'>月销:45</text>
+          <text class='desc_item price'>¥125.00</text>
+        </view>
+      </view>
+
+    </view>
+    <view class='content'>
+      <view>颜色:</view>
+      <view>尺码:</view>
+      <view>购买数量:</view>
+    </view>
+
+    <view class='modal_btn'>{{modalButtonText}}</view>
   </view>
 
 </view>
